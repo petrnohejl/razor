@@ -1,0 +1,34 @@
+--------------------------------------------------------------------------------
+
+Razor
+(c) 2008 Petr Nohejl
+
+Razor slouží k hromadnému ořezávání přebytečných okrajů obrázků. Program ukládá
+ořezané obrázky do nové složky. Uživatel zadá absolutní cestu k adresáři, kde
+jsou obrázky uloženy, vybere barvu okraje ve stupních šedi a toleranci. Aplikace
+prochazí i všechny podadresáře. Okraje lze detekovat pouze ve stupních šedi. 
+
+--------------------------------------------------------------------------------
+
+Instalace:
+
+Razor je konzolová aplikace (spouští se v příkazovém řádku) a je napsána v
+jazyce Python 2.6. Pro její spuštění je třeba mít nainstalován interpret jazyka
+Python, který lze stáhnout na adrese: www.python.org. Dále program používá
+grafickou knihnovnu PIL 1.1.6, kterou lze stáhnout na adrese:
+www.pythonware.com/products/pil/.
+
+--------------------------------------------------------------------------------
+
+Ovládání: 
+
+razor path color tolerance
+     ořeže okraje obrázků, path je absolutní cesta k adresáři, kde jsou uloženy
+     obrázky, color je hodnota barvy ve stupních šedi (0 - 255, 0 je černá,
+     255 je bílá), tolerance (0 - 255, 0 je žádná tolerance), např. pokud je
+     color 245 a tolerance 10, program detekuje barvy v rozmezí 235 - 255,
+     příklad použití: razor.py D:\images 255 10
+
+razor -h - zobrazí nápovědu
+
+--------------------------------------------------------------------------------
