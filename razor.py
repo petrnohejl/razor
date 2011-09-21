@@ -219,7 +219,7 @@ def ErrorSave(file):
 def Help():
 	print "Razor version 1.0"
 	print ""
-	print "Copyright (C)2008 Petr Nohejl, software.8bit.cz"
+	print "Copyright (C)2008 Petr Nohejl, jestrab.net"
 	print ""
 	print "Program cut off the excrescent margins in images and create new directory with new images."
 	print "You must set absolute path where, you have your images,"
